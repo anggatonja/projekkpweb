@@ -315,51 +315,91 @@
 
         </nav>
         <!-- End of Topbar -->
+        <!--Form-->
+        <form class="needs-validation" novalidate>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Nama Calon Pelanggan :</label>
+                <div class="input-group">
+                  <input type="name" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Nama Calon Pelanggan
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">No. Telepon :</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">+62</span>
+                  </div>
+                  <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Nomor Telepon Calon Pelanggan
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Alamat:</label>
+                <div class="input-group">
+                  <input type="name" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Alamat Calon Pelanggan
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Jenis Paket :</label>
+                <select class="custom-select" required>
+                  <option value="">Pilih Paket</option>
+                  <option value="1">Bronze</option>
+                  <option value="2">Silver</option>
+                  <option value="3">Gold</option>
+                </select>
+                </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Nama Teknisi :</label>
+                <select class="custom-select" required>
+                  <option value="">Pilih Teknisi yang Menghandle</option>
+                  <option value="1">Teknisi 1</option>
+                  <option value="2">Teknisi 2</option>
+                  <option value="3">Teknisi 3</option>
+                </select>
+                </div>
+             <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Tanggal :</label>
+                <div class="input-group">
+                  <input type="date" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Tanggal Instalasi
+                  </div>
+                </div>
+              </div>
+           
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+          
+          <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
 
-        <table class="table">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Nama BTS</th>
-                <th scope="col">Alamat BTS</th>
-                <th scope="col">Nama Teknisi</th>
-                <th scope="col">Keterangan</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!---- Button Aksi---->
-
-       <div class="btn-group" role="group" aria-label="Basic example">
-        <a href="forminstalbaru.html" button type=" button" class="btn btn-success">Tambah</button></a>
-        <a href="forminstalbaru.html" button type=" button" class="btn btn-warning">Ubah</button></a>
-        <a href="forminstalbaru.html" button type=" button" class="btn btn-danger">Hapus</button></a>
-      </div>
-
-          <!-- Bootstrap core JavaScript-->
+               <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -377,5 +417,4 @@
   <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
-
 </html>
