@@ -61,8 +61,8 @@
           <span class="text-wrap">Manajemen Akun</span>
         </a>
 
-      <li class="nav-item">
-        <a class="nav-link collapsed1" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+      <li class="nav-item active">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fa fa-plus" aria-hidden="true"></i>
           <span>Buat Jadwal</span>
         </a>
@@ -127,16 +127,16 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="buatlaporan.html">
-          <i class="fa fa-list-alt" aria-hidden="true"></i>
+          <i class="fa fa-list-alt" aria-hidden="false"></i>
           <span>Buat Laporan</span></a>
       </li>
-
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
 
     </ul>
+    
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -287,7 +287,7 @@
                   <div>
                     <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
                     <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                  </div>
+                  </div>e
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
               </div>
@@ -327,59 +327,69 @@
 
         </nav>
         <!-- End of Topbar -->
-        
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">No. SPK</th>
-              <th scope="col">Nama Pelanggan</th>
-              <th scope="col">BTS</th>
-              <th scope="col">Alamat</th>
-              <th scope="col">Telp</th>
-              <th scope="col">Nama Teknisi</th>
-              <th scope="col">jenis pekerjaan</th>
-              <th scope="col">Keterangan</th>
-              <th scope="col">Tanggal</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Q1</th>
-              <td>Otto</td>
-              <td>gabut</td>
-              <td>bubmi</td>
-              <td>911</td>
-              <td>ando</td>
-              <td>reparasi panci</td>
-              <td>sidh normal</td>
-              <td>saaat ini</td>
-            </tr>
-            <tr>
-              <th scope="row">Q2</th>
-              <td>Otto</td>
-              <td>gabut</td>
-              <td>bubmi</td>
-              <td>911</td>
-              <td>ando</td>
-              <td>reparasi panci</td>
-              <td>sidh normal</td>
-              <td>saaat ini</td>
-            </tr>
-            <tr>
-              <th scope="row">Q3</th>
-              <td>Otto</td>
-              <td>gabut</td>
-              <td>bubmi</td>
-              <td>911</td>
-              <td>ando</td>
-              <td>reparasi panci</td>
-              <td>sidh normal</td>
-              <td>saaat ini</td>
-            </tr>
-      </tbody>
-    </table>
 
-          <!-- Bootstrap core JavaScript-->
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Nama Teknisi</th>
+                <th scope="col">No. Telepon</th>
+                <th scope="col">Alamat</th>
+                <th scope="col">Aksi</th>
+        
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              <td><div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Ubah
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="options" id="option3" autocomplete="off"> Hapus
+                </label>
+              </div></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+             <td><div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Ubah
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Hapus
+                </label>
+              </div></td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+             <td><div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-warning">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Ubah
+                </label>
+                <label class="btn btn-danger">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Hapus
+                </label>
+              </div></td>
+            </tr>
+            </tbody>
+          </table> 
+
+          <div class="btn-group" role="group" aria-label="Basic example">
+            &nbsp;&nbsp;&nbsp;<a href="forminstalbaru.html" button type=" button" class="btn btn-success">Tambah Akun</button></a>
+          </div>
+
+  <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 

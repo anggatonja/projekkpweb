@@ -56,6 +56,12 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item active">
+        <a class="nav-link collapsed" href="manajemenakun.html" aria-expanded="true">
+          <i class="fa fa-address-card" aria-hidden="true"></i>
+          <span class="text-wrap">Manajemen Akun</span>
+        </a>
+
+      <li class="nav-item active">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fa fa-plus" aria-hidden="true"></i>
           <span>Buat Jadwal</span>
@@ -321,17 +327,27 @@
 
         </nav>
         <!-- End of Topbar -->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Pilih Jenis Laporan</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Dari Arsip..</option>
+            <option value="1">Jadwal Selesai</option>
+            <option value="2">Jadwal Dibatalkan</option>
+            <option value="3">Semua Jadwal</option>
+          </select>
+        </div>
 
         <table class="table">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">No.</th>
-                <th scope="col">Nama Calon Pelanggan</th>
-                <th scope="col">No. Telepon</th>
-                <th scope="col">Alamat</th>
-                <th scope="col">Tanggal</th>
-                <th scope="col">Paket</th>
+                <th scope="col">Jenis Jadwal</th>
+                <th scope="col">Jenis Kegiatan</th>
                 <th scope="col">Nama Teknisi</th>
+                <th scope="col">Tanggal</th>
+                <th scope="col">Keterangan</th>
                 <th scope="col">Aksi</th>
               </tr>
             </thead>
@@ -344,7 +360,6 @@
                 <td>@mdo</td>
               <td>Bronze</td>
               <td>Teknisi 1</td>
-              <td><a href="ubahforminstalbaru.html" button type=" button" class="btn btn-warning">Ubah</button></a></td>
               </tr>
               <tr>
                 <th scope="row">1</th>
@@ -354,7 +369,6 @@
                 <td>@mdo</td>
               <td>Bronze</td>
               <td>Teknisi 1</td>
-              <td><a href="ubahforminstalbaru.html" button type=" button" class="btn btn-warning">Ubah</button></a></td>
               </tr>
               <tr>
                 <th scope="row">1</th>
@@ -364,7 +378,6 @@
                 <td>@mdo</td>
               <td>Bronze</td>
               <td>Teknisi 1</td>
-              <td><a href="ubahforminstalbaru.html" button type=" button" class="btn btn-warning">Ubah</button></a></td>
               </tr>
             </tbody>
           </table> 
@@ -372,7 +385,7 @@
           <!---- Button Aksi---->
           
       <div class="btn-group" role="group" aria-label="Basic example">
-        &nbsp;&nbsp;&nbsp;<a href="forminstalbaru.html" button type=" button" class="btn btn-success">Tambah</button></a>
+        &nbsp;&nbsp;&nbsp;<a href="forminstalbaru.html" button type=" button" class="btn btn-success">Cetak</button></a>
       </div>
 
         
