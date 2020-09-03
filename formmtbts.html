@@ -327,53 +327,97 @@
 
         </nav>
         <!-- End of Topbar -->
+        <!--Form-->
+        <form class="needs-validation" novalidate>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Nama BTS :</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Nama BTS
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Lokasi BTS :</label>
+                <div class="input-group">
+                  <input type="address" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Lokasi BTS
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Nama Teknisi :</label>
+                <select class="custom-select" required>
+                  <option value="">Pilih Teknisi yang Bertugas</option>
+                  <option value="1">Teknisi 1</option>
+                  <option value="2">Teknisi 2</option>
+                  <option value="3">Teknisi 3</option>
+                </select>
+                </div>
+           <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Nomor SPK :</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Nomor SPK Teknisi
+                  </div>
+                </div>
+              </div>
+             <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Tanggal Keluar :</label>
+                <div class="input-group">
+                  <input type="date" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Tanggal Keluar Teknisi
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Jenis Perbaikan : </label>
+                <select class="custom-select" required>
+                  <option value="">Pilih Jenis Perbaikan</option>
+                  <option value="1">Perbaikan 1</option>
+                  <option value="2">Perbaikan 2</option>
+                  <option value="3">Perbaikan 3</option>
+                </select>
+                </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Keterangan Perbaikan :</label>
+                <div class="input-group">
+                  <input type="name" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Keterangan
+                  </div>
+                </div>
+              </div>
+           
+              &nbsp;&nbsp;&nbsp;<button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+          
+          <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
 
-        <table class="table">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Nama BTS</th>
-                <th scope="col">Alamat BTS</th>
-                <th scope="col">Nama Teknisi</th>
-                <th scope="col">Keterangan</th>
-                <th scope="col">Aksi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td><a href="forminstalbaru.html" button type=" button" class="btn btn-warning">Ubah</button></a></td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-                <td><a href="forminstalbaru.html" button type=" button" class="btn btn-warning">Ubah</button></a></td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@mdo</td>
-                <td><a href="forminstalbaru.html" button type=" button" class="btn btn-warning">Ubah</button></a></td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!---- Button Aksi---->
-
-       <div class="btn-group" role="group" aria-label="Basic example">
-        &nbsp;&nbsp;&nbsp; <a href="formmtbts.html" button type=" button" class="btn btn-success">Tambah</button></a>
-      </div>
-
-          <!-- Bootstrap core JavaScript-->
+               <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -391,5 +435,4 @@
   <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
-
 </html>
