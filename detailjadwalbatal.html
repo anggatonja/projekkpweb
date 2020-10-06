@@ -336,28 +336,32 @@
                 <div class="input-group">
                   <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                   <div class="invalid-feedback">
-                    Masukkan Nama BTS
+                    
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-3">
-                <label for="validationCustomUsername">Nama BTS :</label>
+                <label for="validationCustomUsername"> Tanggal :</label>
                 <div class="input-group">
-                  <input type="name" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <input type="date" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                   <div class="invalid-feedback">
-                    Masukkan Lokasi BTS
+                    
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-3">
-                <label for="validationCustomUsername">Alamat BTS :</label>
-                <div class="input-group">
-                  <input type="address" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                  <div class="invalid-feedback">
-                    Masukkan Lokasi BTS
-                  </div>
+                <label for="validationCustomUsername">Jenis Pekerjaan :</label>
+                <select class="custom-select" required>
+                  <option value=""></option>
+                  <option value="1">Instalasi</option>
+                  <option value="2">Perbaikan</option>
+                  <option value="3">Pemblokiran</option>
+                  <option value="3">Pencabutan</option>
+                  <option value="3">Upgrade</option>
+                  <option value="3">Downgrade</option>
+                  <option value="3">VOIP</option>
+                </select>
                 </div>
-              </div>
               <div class="col-md-4 mb-3">
                 <label for="validationCustomUsername">IKR :</label>
                 <select class="custom-select" required>
@@ -368,33 +372,53 @@
                 </select>
                 </div>
                 <div class="col-md-4 mb-3">
-                  <label for="validationCustomUsername">Jenis Pekerjaan : </label>
-                  <select class="custom-select" required>
-                    <option value="">Pilih Jenis Pekerjaan</option>
-                    <option value="1">Cabut Perangkat</option>
-                    <option value="2">Pasang Perangkat</option>
-                    <option value="3">Maintenance Perangkat</option>
-                  </select>
+                    <label for="validationCustomUsername">Nama BTS :</label>
+                    <div class="input-group">
+                      <input type="name" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustomUsername">Alamat :</label>
+                    <div class="input-group">
+                      <input type="address" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        
+                      </div>
+                    </div>
                   </div>
              <div class="col-md-4 mb-3">
-                <label for="validationCustomUsername">Tanggal Keluar :</label>
+                <label for="validationCustomUsername">No. Pelanggan :</label>
                 <div class="input-group">
-                  <input type="date" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                   <div class="invalid-feedback">
-                    Masukkan Tanggal Keluar Teknisi
+                    
                   </div>
                 </div>
               </div>
           
               <div class="col-md-4 mb-3">
-                <label for="validationCustomUsername">Keterangan Perbaikan :</label>
+                <label for="validationCustomUsername">Nama Pelanggan :</label>
                 <div class="input-group">
                   <input type="name" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                   <div class="invalid-feedback">
-                    Masukkan Keterangan
+                   
                   </div>
                 </div>
               </div>
+
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Keterangan :</label>
+                <div class="input-group">
+                  <input type="name" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                   
+                  </div>
+                </div>
+              </div>
+              
            
               &nbsp;&nbsp;&nbsp;<button class="btn btn-primary" type="submit">Submit</button>
           </form>
