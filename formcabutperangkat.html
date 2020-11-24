@@ -126,9 +126,6 @@
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
       <!-- Nav Item - Dashboard -->
-      <div class="sidebar-heading">
-        Menu Lain
-      </div>
       <li class="nav-item active">
         <a class="nav-link" href="buatlaporan.html">
           <i class="fa fa-list-alt" aria-hidden="false"></i>
@@ -140,7 +137,6 @@
       </div>
 
     </ul>
-    
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -291,7 +287,7 @@
                   <div>
                     <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
                     <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                  </div>e
+                  </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
               </div>
@@ -331,58 +327,110 @@
 
         </nav>
         <!-- End of Topbar -->
+        <!--Form-->
+        <form class="needs-validation" novalidate>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">No. SPK :</label>
+                <div class="input-group">
+                  <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Nomor SPK
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Nama Pelanggan:</label>
+                <div class="input-group">
+                  <input type="name" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Nama Pelanggan
+                  </div>
+                </div>
+              </div>
+              <form class="needs-validation" novalidate>
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustomUsername">ATTN:</label>
+                    <div class="input-group">
+                      <input type="name" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Masukkan ATTN
+                      </div>
+                    </div>
+                  </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">No. Telepon :</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">+62</span>
+                  </div>
+                  <input type="number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Nomor Telepon Calon Pelanggan
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Alamat:</label>
+                <div class="input-group">
+                  <input type="name" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Alamat Calon Pelanggan
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Jenis Paket :</label>
+                <select class="custom-select" required>
+                  <option value="">Pilih Paket</option>
+                  <option value="1">Bronze</option>
+                  <option value="2">Silver</option>
+                  <option value="3">Gold</option>
+                </select>
+                </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Nama Teknisi :</label>
+                <select class="custom-select" required>
+                  <option value="">Pilih Teknisi yang Menghandle</option>
+                  <option value="1">Teknisi 1</option>
+                  <option value="2">Teknisi 2</option>
+                  <option value="3">Teknisi 3</option>
+                </select>
+                </div>
+             <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Tanggal :</label>
+                <div class="input-group">
+                  <input type="date" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Masukkan Tanggal Instalasi
+                  </div>
+                </div>
+              </div>
+           
+              &nbsp;&nbsp;&nbsp;<button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+          
+          <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
 
-        <table class="table">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Nama Teknisi</th>
-                <th scope="col">No. Telepon</th>
-                <th scope="col">Alamat</th>
-                <th scope="col">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Aksi</th>
-        
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td><div class="btn-group" role="group" aria-label="...">
-                  <a href="editformakunteknisi.html" button type=" button" class="btn btn-warning">Ubah</button></a>
-                  <a href="1.html" button type=" button" class="btn btn-danger">Hapus</button></a></td>
-              </div></td>
-              </tr>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td><div class="btn-group" role="group" aria-label="...">
-                  <a href="editformakunteknisi.html" button type=" button" class="btn btn-warning">Ubah</button></a>
-                  <a href="1.html" button type=" button" class="btn btn-danger">Hapus</button></a></td>
-              </div></td>
-              </tr>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-             <td><div class="btn-group" role="group" aria-label="...">
-              <a href="editformakunteknisi.html" button type=" button" class="btn btn-warning">Ubah</button></a>
-              <a href="1.html" button type=" button" class="btn btn-danger">Hapus</button></a></td>
-            </div>
-              </div></td>
-            </tr>
-            </tbody>
-          </table> 
-
-          <div class="btn-group" role="group" aria-label="Basic example">
-            &nbsp;&nbsp;&nbsp;<a href="formakunteknisi.html" button type=" button" class="btn btn-success">Tambah Akun</button></a>
-          </div>
-
-  <!-- Bootstrap core JavaScript-->
+               <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -400,5 +448,4 @@
   <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
-
 </html>
